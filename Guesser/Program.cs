@@ -11,11 +11,10 @@ namespace Guesser
         static void Main(string[] args)
         {
             GameService game = new GameService();
-            int Choice = game.Initialize();
-            game.GameStarted(Choice);
+            int Choice = game.initialize();
+            game.gameStarted(Choice);
+
             Console.ReadKey();
-
-
         }
     }
 }

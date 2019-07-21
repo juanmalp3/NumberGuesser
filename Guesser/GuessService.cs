@@ -9,14 +9,13 @@ namespace Guesser
     class GuessService
     {
         public GuessService()
-        {
-
+        { 
         }
 
-        private int numberGenerator() {
+        public int numberGenerator() {
             Random rn = new Random();
-            var random = rn.Next();
+            var random = rn.Next(0,10);
             return random;
-        } 
+        }
     }
 }
